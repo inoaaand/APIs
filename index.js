@@ -5,7 +5,7 @@ async function carregarPersonagens() {
   
       const container = document.getElementById("character-list");
       data.results.forEach(personagem => {
-        container.innerHTML += `
+        container.innerHTML = container.innerHTML + `
           <div class="character">
             <img src="${personagem.image}" alt="${personagem.name}" width="100">
             <div>
@@ -17,11 +17,10 @@ async function carregarPersonagens() {
           </div>
         `;
       });
-    } catch (err) {
-      console.error("Erro ao carregar personagens:", err);
+    } catch (erro) {
+      console.error("Erro ao carregar personagens:", erro);
       document.getElementById("character-list").innerText = "Erro ao carregar dados.";
     }
   }
-  
   carregarPersonagens();
   

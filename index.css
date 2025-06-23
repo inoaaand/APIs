@@ -2,20 +2,33 @@ body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
     padding: 20px;
+    margin: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
   }
   
   .character {
     background: #fff;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
+    border: 3px solid #ccc;
+    margin-bottom: 40px;
     padding: 10px;
     display: flex;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    cursor: pointer;
   }
   
   .character img {
     margin-right: 20px;
     border-radius: 8px;
+    height: 100px;
+  }
+  
+  .character:hover {
+    border-color: #918686;
+    background-color: #fafafa;
   }
   
